@@ -9,6 +9,9 @@
 .display-flex{
     display: flex;
 }
+.display-hide{
+    display: none;
+}
 .btn-primary{
     color: #FFFFFF;
     font-weight: 600;
@@ -27,7 +30,6 @@
     background-clip: text;
     color: transparent;
 }
-
 /* navbar related style */
 .navbar{
     align-items: center;
@@ -65,7 +67,7 @@
     background-repeat: no-repeat;
 }
 .hero{
-    margin: 101px auto;
+    margin: 101px auto 0px auto;
     padding-bottom: 101px;
     display: flex;
     flex-direction: column;
@@ -105,6 +107,98 @@
 .banner-description{
     color: #FFFFFF;
 }
+/* podcast related style */
+#tech-info{
+    padding: 50px 200px 120px 200px;
+}
+.podcast-container{
+    text-align: center;
+    max-width: 1200px;
+    margin-bottom: 80px;
+}
+.podcast-tittle{
+    margin: 0px;
+    margin-bottom: 16px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.podcast-description{
+    color: #FFFFFF;
+    line-height: 20px;
+}
+.achievement-container{
+    max-width: 1200px;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+}
+.achievement{
+    text-align: center;
+}
+.achievement-number{
+    margin: 0px;
+    margin-bottom: 16px;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #00FF88;
+}
+.achievement-name{
+    color: #FFFFFF;
+}
+/* tech-web purpose related style */
+#purpose{
+    padding: 120px 200px;
+}
+.purpose-container{
+    max-width: 1200px;
+}
+.purpose-tittle{
+    text-align: center;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.features{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 275px);
+    column-gap: 30px;
+    row-gap: 30px;
+    color: #FFFFFF;
+}
+.features-design{
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    padding: 40px;
+}
+.feature-1{
+    display: flex;
+    align-items: center;
+}
+.feature-tittle{
+    margin: 16px auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.feature-description{
+    line-height: 24px;
+}
+.big-layout{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.mid-layout{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.small-layout{
+    grid-column: span 1;
+    grid-row: span 1;
+}
 /* media query responsive related design */
 @media screen and (max-width: 576px) {
     .hero-bg{
@@ -138,5 +232,50 @@
     }
     .badge{
         right: 6px;
+    }
+    #tech-info{
+        padding: 40px 20px;
+    }
+    .podcast-container{
+        margin-bottom: 40px;
+    }
+    .podcast-tittle{
+        font-size: 2rem;
+    }
+    .achievement-container{
+        margin-top: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 85px);
+        column-gap: 40px;
+        row-gap: 40px;
+    }
+    .achievement-number{
+        font-size: 2.5rem;
+    }
+    #purpose{
+        padding: 40px 20px;
+    }
+    .purpose-tittle{
+        font-size: 2rem;
+        margin-bottom: 16px;
+    }
+    .features{
+        column-gap: 16px;
+        row-gap: 16px;
+    }
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: none;
+    }
+    .features-design{
+        max-width: 400px;
+        border-radius: 24px;
+        padding: 24px;
+    }
+    .big-layout,
+    .mid-layout,
+    .small-layout{
+        grid-column: auto;
+        grid-row: auto;
     }
 }
