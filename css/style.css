@@ -54,6 +54,9 @@
     color: #FFFFFF;
     font-weight: 500;
 }
+.hamburger-menu{
+    display: none;
+}
 /* banner related style */
 .hero-bg{
     width: 100%;
@@ -101,4 +104,39 @@
 }
 .banner-description{
     color: #FFFFFF;
+}
+/* media query responsive related design */
+@media screen and (max-width: 576px) {
+    .hero-bg{
+        width: 100%;
+        background-size: 100% 100%;
+    }
+    .nav-links,
+    .btn-primary{
+        display: none;
+    }
+    .navbar{
+        justify-content: space-between;
+        padding: 18px 20px;
+    }
+    .hamburger-menu{
+        display: block;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+    .hero{
+        margin: 40px auto;
+    }
+    .banner-image{
+        width: 200px;
+        height: 200px;
+    }
+    .banner-image img{
+        width: 80px;
+        max-height: 80px;
+    }
+    .badge{
+        right: 6px;
+    }
 }
