@@ -9,9 +9,6 @@
 .display-flex{
     display: flex;
 }
-.display-hide{
-    display: none;
-}
 .btn-primary{
     color: #FFFFFF;
     font-weight: 600;
@@ -226,6 +223,7 @@
 }
 .episode-video{
     width: 100%;
+    height: 100%;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
 }
@@ -295,6 +293,35 @@
     display: flex;
     align-items: center;
     gap: 8px;
+}
+/* footer related style */
+#footer-bg{
+    background-image: url(../assets/footer-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 120px;
+    text-align: center;
+}
+.footer-tittle{
+    font-size: 3rem;
+    margin-bottom: 32px;
+}
+.social-apps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+.social-app{
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.copy-right{
+    color: #FFFFFF;
 }
 /* media query responsive related design */
 @media screen and (max-width: 576px) {
@@ -413,5 +440,20 @@
     }
     .host-name{
         font-size: 1.5rem;
+    }
+    #footer-bg{
+        background-size: 100% 100%;
+        padding: 40px 20px;
+    }
+    .footer-container{
+        max-width: 400px;
+    }
+    .footer-tittle{
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+    .social-apps{
+        flex-wrap: wrap;
+        margin-bottom: 24px;
     }
 }
