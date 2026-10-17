@@ -17,6 +17,34 @@
     border: none;
     border-radius: 10000px;
 }
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.btn-secondary{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 12px 20px;
+    background: linear-gradient(#F7E93F, #FB09B4, #9100F8);
+    border: none;
+    border-radius: 10000px;
+}
+.btn-third{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color:#00FF88;
+    background: none;
+    border: 1px solid #00FF88;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 10000px;
+}
 /* icon related style */
 .left-arrow{
     margin-left: 6px;
@@ -103,6 +131,7 @@
 }
 .banner-description{
     color: #FFFFFF;
+    margin-bottom: 24px;
 }
 /* podcast related style */
 #tech-info{
